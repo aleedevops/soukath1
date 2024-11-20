@@ -2,7 +2,8 @@ pipeline{
  agent any
   stages{
     stage('clone'){
-      steps{ checkout scm
+      steps{ 
+             git branch: 'main', url: 'https://github.com/aleedevops/soukath1.git'
                 }
           }
        }
